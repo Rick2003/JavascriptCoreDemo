@@ -13,6 +13,7 @@
 		495D901521F41B6900F3EEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495D901421F41B6900F3EEC0 /* Assets.xcassets */; };
 		495D901821F41B6900F3EEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495D901621F41B6900F3EEC0 /* LaunchScreen.storyboard */; };
 		495D901B21F41B6900F3EEC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D901A21F41B6900F3EEC0 /* main.m */; };
+		495D905C21F616E500F3EEC0 /* jscode.js in Resources */ = {isa = PBXBuildFile; fileRef = 495D905B21F616E500F3EEC0 /* jscode.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		495D901721F41B6900F3EEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495D901921F41B6900F3EEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495D901A21F41B6900F3EEC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495D905B21F616E500F3EEC0 /* jscode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jscode.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		495D900A21F41B6800F3EEC0 /* JavascriptCoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				495D905B21F616E500F3EEC0 /* jscode.js */,
 				495D900B21F41B6800F3EEC0 /* AppDelegate.h */,
 				495D900C21F41B6800F3EEC0 /* AppDelegate.m */,
 				495D900E21F41B6800F3EEC0 /* ViewController.h */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495D905C21F616E500F3EEC0 /* jscode.js in Resources */,
 				495D901821F41B6900F3EEC0 /* LaunchScreen.storyboard in Resources */,
 				495D901521F41B6900F3EEC0 /* Assets.xcassets in Resources */,
 				495D901321F41B6800F3EEC0 /* Main.storyboard in Resources */,
