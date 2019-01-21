@@ -57,27 +57,23 @@
     };
     [context evaluateScript:@"log(`demo text`)"];
     
-    //React Native Process
+    //Native-JS demo
     
     //Objective C bridge
     NSMutableDictionary *buttonDict = [NSMutableDictionary new];
     
     context[@"createButton"] = ^(NSString *identifier) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.backgroundColor = [UIColor blackColor];
         [self.view addSubview:button];
         [buttonDict setObject:button forKey:identifier];
-        NSLog(@"%@", identifier);
     };
     
     context[@"setFrame"] = ^(CGFloat x, CGFloat y, CGFloat width, CGFloat height, NSString *identifier) {
-        NSLog(@"%@", identifier);
         UIButton *button = [buttonDict objectForKey:identifier];
         [button setFrame:CGRectMake(x, y, width, height)];
     };
     
     context[@"setColor"] = ^(NSString *color, NSString *identifier) {
-        NSLog(@"%@", identifier);
         UIButton *button = [buttonDict objectForKey:identifier];
         if([color isEqualToString:@"red"]){
             button.backgroundColor = [UIColor redColor];
@@ -97,7 +93,6 @@
         error:&error];
     
     [context evaluateScript:script];
-    
 }
 
 

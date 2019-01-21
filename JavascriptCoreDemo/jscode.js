@@ -4,11 +4,11 @@ function Button() {
     createButton(identifier);
     return {
         identifier: identifier,
-        setFrame: function(x, y, width, height, identifier=this.identifier) {
-            setFrame(x, y, width, height, identifier);
+        setFrame: function(x, y, width, height) {
+            setFrame(x, y, width, height, this.identifier);
         },
-        setColor: function(color, identifier=this.identifier) {
-            setColor(color, identifier);
+        setColor: function(color) {
+            setColor(color, this.identifier);
         }
     }
 }
